@@ -10,7 +10,7 @@ function toggleMenu() {
 }
 
 function fetchComentarios() {
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const proxyUrl = '';
     const targetUrl = 'https://jornada-api-b57b4d5db507.herokuapp.com/feedbacks/feedbacks-home';
 
     fetch(proxyUrl + targetUrl)
