@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Jornada</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-header">
+            <a href="#home">JORNADA</a>
+        </div>
+        <div class="menu-seleciona-pc">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#comentario">Comentários</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </div>
+        <div class="menu-seleciona-cell">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="./imgs/menu.png" alt="">
+            </div>
+            <div class="menu-dropdown" id="menu-dropdown">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#comentario">Comentários</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bemvindo" id="home">
+            <h1>Bem-Vindo ao Jornado</h1>
+            <p>
+                Descubra novos destinos, encontre dicas práticas e compartilhe experiências emocionantes em Jornada.
+                Nosso site oferece inspiração, conselhos especializados, histórias de viagem e ferramentas úteis para
+                tornar sua jornada inesquecível. Baixe agora mesmo nosso app. <a href="#download">Clique aqui!</a>
+            </p>
+        </div>
+
+        <section class="parallax"></section>
+        <section class="parallax">
+            <h1>Beto Carrero</h1>
+            <p>Diversão sem limites! Parque temático, shows emocionantes e muita adrenalina!</p>
+        </section>
+        <section class="parallax"></section>
+        <section class="parallax">
+            <h1>Campos do Jordão</h1>
+            <p>
+                Viva a magia de Campos do Jordão! Chalés alpinos, trilhas e gastronomia local. Renove-se nas
+                montanhas!
+            </p>
+        </section>
+        <section class="parallax"></section>
+        <section class="parallax">
+            <h1>Salvador</h1>
+            <p>Cores, praias e cultura baiana. Uma experiência única em cada esquina!</p>
+        </section>
+        <section class="parallax"></section>
+
+        <div id="comentario">
+            <div class="comentariosTitle">
+                <h2>Veja alguns comentários de pessoas que utilizam nosso aplicativo</h2>
+            </div>
+            <div id="comentarios-container">
+                <!-- Cards de comentários serão adicionados aqui -->
+            </div>
+        </div>
+
+        <div id="download">
+            <div class="comentariosTitle">
+                <h2>Faça o download de nosso aplicativo</h2>
+            </div>
+            <div class="botoes">
+                <a href="#"><img src="./imgs/android.png" alt="">
+                    <p>Download para Android</p>
+                </a>
+                <a href="#"><img src="./imgs/ios.png" alt="">
+                    <p>Download para IOS</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Projeto desenvolvido e criado por</h3>
+        <p>Luan, Pedro Santos, Otavio e Cleber</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

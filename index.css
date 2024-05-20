@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: #B2F1FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+}
+
+.logo-header {
+    margin-left: 20px;
+}
+
+.logo-header>a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-seleciona-pc {
+    display: block;
+}
+
+.menu-seleciona-pc>ul {
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.menu-seleciona-pc>ul>li {
+    padding: 20px;
+}
+
+.menu-seleciona-pc>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-seleciona-cell {
+    display: none;
+}
+
+.bemvindo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.bemvindo>p {
+    margin-top: 20px;
+}
+
+/*efeito paralax*/
+
+section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+}
+
+section>p {
+    margin-top: 25px;
+}
+
+section:nth-of-type(1) {
+    background-image: url('./imgs/beto.jpeg');
+    height: 600px;
+}
+
+section:nth-of-type(3) {
+    background-image: url('./imgs/campos.jpeg');
+    height: 600px;
+}
+
+section:nth-of-type(5) {
+    background-image: url('./imgs/salvador.jpg');
+    height: 600px;
+}
+
+section:nth-of-type(7) {
+    background-image: url('./imgs/salvador.jpg');
+    height: 600px;
+}
+
+/*comentarios*/
+
+.comentariosTitle {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#comentarios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização para os cards de comentários */
+.comentario-card {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.comentario-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.comentario-card p {
+    font-size: 16px;
+}
+
+/*downloads*/
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.botoes>a>img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    height: 15vh;
+    background-color: #B2F1FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>p {
+    margin-top: 10px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .menu-seleciona-pc {
+        display: none;
+
+    }
+
+    .menu-seleciona-cell {
+        display: flex;
+    }
+
+    .menu-icon {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .menu-icon>img {
+        width: 20px;
+    }
+
+    .menu-dropdown {
+        margin-top: 20px;
+        display: none;
+        position: absolute;
+        background-color: #B2F1FF;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        z-index: 999;
+    }
+
+    .menu-dropdown ul {
+        list-style: none;
+        margin-top: 30px;
+        padding: 0px 20px;
+    }
+
+    .menu-dropdown ul li:hover {
+        color: #B2F1FF;
+    }
+
+    .menu-dropdown ul li {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .menu-dropdown ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu-dropdown.active {
+        display: block;
+    }
+
+    .mySlides>img {
+        height: 20vh;
+    }
+}
