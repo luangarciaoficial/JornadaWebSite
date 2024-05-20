@@ -111,20 +111,19 @@ section:nth-of-type(7) {
 @media (max-width: 768px) {
     section {
         height: 400px;
-        /* Altura menor para telas menores */
     }
 
     section:nth-of-type(1) {
-        background-image: url('./imgs/beto_mobile.jpeg');
+        background-image: url('./imgs/beto.jpeg');
     }
 
     section:nth-of-type(3) {
-        background-image: url('./imgs/campos_mobile.jpeg');
+        background-image: url('./imgs/campos.jpeg');
     }
 
     section:nth-of-type(5),
     section:nth-of-type(7) {
-        background-image: url('./imgs/salvador_mobile.jpg');
+        background-image: url('./imgs/salvador.jpg');
     }
 }
 
